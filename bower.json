@@ -1,0 +1,11 @@
+{
+    "name": "betsol-angular-router",
+    "description": "Drop-in extension for ngRoute with ability to generate URLs",
+    "version": "1.0.0",
+    "main": "src/angular-router.js",
+    "dependencies": {
+        "betsol-js-router": "~1.0.0"
+    },
+    "devDependencies": {
+    }
+}
