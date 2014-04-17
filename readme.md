@@ -40,9 +40,13 @@ You think there must be a better way? Read on!
 
 ## Installation
 
-1). Just install `angular-router` where you see fit. And include it to your page with you favorite method.
+1). Just install `angular-router` where you see fit.
 
 Also install [`js-router`][js-router] library as `angular-router` is using it internally.
+
+You can do this with bower: `bower install --save-dev betsol-angular-router`.
+
+2). Include both libraries to your page.
 
 **Example:**
 
@@ -51,7 +55,7 @@ Also install [`js-router`][js-router] library as `angular-router` is using it in
 <script type="text/javascript" src="betsol/angular-router/angular-router.js"></script>
 ```
 
-2). Add dependency for `ngRouter` in your application's module. Make sure that `ngRoute` is also available.
+3). Add dependency for `ngRouter` in your application's module. Make sure that `ngRoute` is also available.
 
 **Example:**
 
@@ -63,7 +67,7 @@ angular.module('application', [
 ]);
 ```
 
-3). Just replace all calls to `$routeProvider` with `routerProvider`.
+4). Just replace all calls to `$routeProvider` with `routerProvider`.
 
 **Example:**
 
