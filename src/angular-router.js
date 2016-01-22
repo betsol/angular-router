@@ -25,6 +25,9 @@
         this.$get = ['routingService', function(routingService) {
             routingService.setPlaceholderPattern('angular');
             for (var i in namedRoutes) {
+                if (!namedRoutes.hasOwnProperty(i)) {
+                    continue;
+                }
                 var namedRoute = namedRoutes[i];
                 routingService.add(namedRoute.name, {
                     path: namedRoute.path
